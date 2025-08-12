@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <base target="_self">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hotel Palazzio - Mediterráneo de Lujo</title>
+  <meta name="description" content="Hotel Palazzio, lujo frente al mar en Pinamar. Estilo griego e italiano con gastronomía exclusiva." />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+  <style>
+    @font-face {
+      font-family: 'Alte Haas Grotesk';
+      src: url('AlteHaasGroteskRegular.ttf') format('truetype');
+    }
+
+    @font-face {
+      font-family: 'Conquer';
+      src: url('Conquer-Regular.ttf') format('truetype');
+    }
+
+    body {
+      font-family: 'Alte Haas Grotesk', sans-serif;
+    }
+
+    .logo-font {
+      font-family: 'Conquer', cursive;
+    }
+
+    .hero-section {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('1000049473.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .room-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+
+<body class="text-gray-800">
+
+  <header class="sticky top-0 z-50 bg-white shadow-md">
+    <nav class="container mx-auto px-6 py-4">
+      <div class="flex justify-between items-center">
+        <a href="#" class="text-3xl font-bold text-primary logo-font">Hotel Palazzio</a>
+        <div class="hidden md:flex space-x-8">
+          <a href="#inicio" class="nav-link">Inicio</a>
+          <a href="#quienes-somos" class="nav-link">Quiénes somos</a>
+          <a href="#habitaciones" class="nav-link">Habitaciones</a>
+          <a href="#restaurantes" class="nav-link">Restaurantes</a>
+          <a href="#contacto" class="nav-link">Contacto</a>
+        </div>
+        <button class="md:hidden focus:outline-none">
+          <i class="fas fa-bars text-2xl text-primary"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <section id="inicio" class="hero-section h-screen flex items-center justify-center text-white">
+    <div class="text-center px-4">
+      <h1 class="text-5xl md:text-6xl font-bold mb-6">Bienvenido a Hotel Palazzio</h1>
+      <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">Donde la elegancia griega se encuentra con el encanto italiano, en la costa de Pinamar</p>
+      <a href="#habitaciones" class="bg-secondary hover:bg-yellow-700 text-white font-bold py-3 px-8 rounded-full transition duration-300">Ver Habitaciones</a>
+    </div>
+  </section>
+
+  <section id="quienes-somos" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold text-primary mb-6">Quiénes Somos</h2>
+      <p class="text-lg max-w-3xl mx-auto">
+        En el corazón de Pinamar, Hotel Palazzio fusiona el esplendor arquitectónico griego con la sofisticación italiana en una propuesta única de lujo costero.
+        Cada rincón está diseñado para brindar una experiencia inolvidable, donde la serenidad del mar se combina con el confort más refinado.
+        Nuestro compromiso es ofrecer hospitalidad de excelencia en un entorno exclusivo, ideal para el descanso y el placer.
+      </p>
+    </div>
+  </section>
+
+  <section id="habitaciones" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-primary text-center mb-16">Nuestras Habitaciones</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <div class="room-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+          <img src="https://images.unsplash.com/photo-1560347876-aeef00ee58a1" alt="Habitación Griega" class="w-full h-64 object-cover" loading="lazy" />
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-primary mb-2">Suite Santorini</h3>
+            <p class="text-gray-600 mb-4">Inspirada en las islas griegas, con vistas al mar Egeo y decoración blanca minimalista.</p>
+            <ul class="mb-4 space-y-2">
+              <li><i class="fas fa-check text-secondary mr-2"></i>Cama king size</li>
+              <li><i class="fas fa-check text-secondary mr-2"></i>Balcón privado</li>
+              <li><i class="fas fa-check text-secondary mr-2"></i>Jacuzzi con vista</li>
+            </ul>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-accent">€320/noche</span>
+              <button class="bg-primary hover:bg-blue-900 text-white py-2 px-4 rounded">Reservar</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="room-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+          <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b" alt="Habitación Italiana" class="w-full h-64 object-cover" loading="lazy" />
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-primary mb-2">Suite Amalfi</h3>
+            <p class="text-gray-600 mb-4">Diseño costero italiano con materiales nobles y frescura mediterránea.</p>
+            <ul class="mb-4 space-y-2">
+              <li><i class="fas fa-check text-secondary mr-2"></i>Terraza privada</li>
+              <li><i class="fas fa-check text-secondary mr-2"></i>Ducha doble</li>
+              <li><i class="fas fa-check text-secondary mr-2"></i>Servicio de mayordomo</li>
+            </ul>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-accent">€390/noche</span>
+              <button class="bg-primary hover:bg-blue-900 text-white py-2 px-4 rounded">Reservar</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="room-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+          <img src="https://images.unsplash.com/photo-1600566753190-17f9170c1f7b" alt="Villa Mediterránea" class="w-full h-64 object-cover" loading="lazy" />
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-primary mb-2">Villa Mediterránea</h3>
+            <p class="text-gray-600 mb-4">Casa privada con piscina infinita y acceso directo a la playa privada.</p>
+            <ul class="mb-4 space-y-2">
+              <li><i class="fas fa-check text-secondary mr-2"></i>2 dormitorios</li>
+              <li><i class="fas fa-check text-secondary mr-2"></i>Comedor al aire libre</li>
+              <li><i class="fas fa-check text-secondary mr-2"></i>Piscina privada</li>
+            </ul>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-accent">€750/noche</span>
+              <button class="bg-primary hover:bg-blue-900 text-white py-2 px-4 rounded">Reservar</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="restaurantes" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-primary text-center mb-16">Nuestra Gastronomía 🍝 🥗</h2>
+      <div class="grid md:grid-cols-2 gap-12">
+
+        <div class="bg-white rounded-lg overflow-hidden shadow-md">
+          <img src="https://images.unsplash.com/photo-1595295333158-4742f28fbd85" alt="Plato de pasta italiana" class="w-full h-80 object-cover" loading="lazy" />
+          <div class="p-8">
+            <h3 class="text-2xl font-bold text-primary mb-4">Ristorante La Costa</h3>
+            <p class="text-gray-600 mb-6">Sabores auténticos de la costa italiana. Disfrutá de pastas frescas, pizzas artesanales y una selección de vinos en un ambiente elegante y acogedor.</p>
+            <a href="#" class="bg-primary hover:bg-blue-900 text-white font-bold py-2 px-6 rounded-full transition duration-300">Ver Menú</a>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg overflow-hidden shadow-md">
+          <img src="https://images.unsplash.com/photo-1587964335559-91391054a861" alt="Ensalada Griega fresca" class="w-full h-80 object-cover" loading="lazy" />
+          <div class="p-8">
+            <h3 class="text-2xl font-bold text-primary mb-4">Taverna Thalassa</h3>
+            <p class="text-gray-600 mb-6">Un viaje culinario a las islas griegas. Probá nuestros gyros, moussaka y mariscos frescos, preparados con el mejor aceite de oliva y hierbas locales.</p>
+            <a href="#" class="bg-primary hover:bg-blue-900 text-white font-bold py-2 px-6 rounded-full transition duration-300">Ver Menú</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  </body>
+</html>
